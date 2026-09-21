@@ -1,8 +1,14 @@
 package formulariopessoa;
 
+import javax.swing.JComboBox;
+import javax.swing.JTextField;
+import javax.swing.JTextPane;
+
 
 public class CadastroPessoaForm extends javax.swing.JFrame {
 
+    
+    
     /**
      * Creates new form CadastroPessoaForm
      */
@@ -41,17 +47,17 @@ public class CadastroPessoaForm extends javax.swing.JFrame {
         jLabel9 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jScrollPane1 = new javax.swing.JScrollPane();
-        jTextPane1 = new javax.swing.JTextPane();
+        Imp_CPF = new javax.swing.JTextPane();
         jScrollPane3 = new javax.swing.JScrollPane();
-        jTextPane3 = new javax.swing.JTextPane();
+        Imp_Nome = new javax.swing.JTextPane();
         jScrollPane5 = new javax.swing.JScrollPane();
-        jTextPane5 = new javax.swing.JTextPane();
+        Imp_Endereco = new javax.swing.JTextPane();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
-        jComboBox1 = new javax.swing.JComboBox<>();
+        Box_Estado = new javax.swing.JComboBox<>();
         jLabel10 = new javax.swing.JLabel();
-        jComboBox3 = new javax.swing.JComboBox<>();
+        Box_cargo = new javax.swing.JComboBox<>();
         button1 = new java.awt.Button();
         jLabel11 = new javax.swing.JLabel();
 
@@ -146,15 +152,17 @@ public class CadastroPessoaForm extends javax.swing.JFrame {
         jLabel9.setText("Estado:");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Formulario para cadastro de pessoa");
+        setPreferredSize(new java.awt.Dimension(400, 300));
 
-        jTextPane1.setName("Inp_Cpf"); // NOI18N
-        jScrollPane1.setViewportView(jTextPane1);
+        Imp_CPF.setName("Inp_Cpf"); // NOI18N
+        jScrollPane1.setViewportView(Imp_CPF);
 
-        jTextPane3.setName("Inp_Nome"); // NOI18N
-        jScrollPane3.setViewportView(jTextPane3);
+        Imp_Nome.setName("Inp_Nome"); // NOI18N
+        jScrollPane3.setViewportView(Imp_Nome);
 
-        jTextPane5.setName("Inp_Endereco"); // NOI18N
-        jScrollPane5.setViewportView(jTextPane5);
+        Imp_Endereco.setName("Inp_Endereco"); // NOI18N
+        jScrollPane5.setViewportView(Imp_Endereco);
 
         jLabel2.setText("Nome:");
 
@@ -162,22 +170,22 @@ public class CadastroPessoaForm extends javax.swing.JFrame {
 
         jLabel7.setText("Estado:");
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Acre", "Alagoas", "Amapá", "Amazonas", "Bahia", "Ceará", "Espírito Santo", "Goiás", "Maranhão", "Mato Grosso", "Mato Grosso do Sul", "Minas Gerais", "Pará", "Paraíba", "Paraná", "Pernambuco", "Piauí", "Rio de Janeiro", "Rio Grande do Norte", "Rio Grande do Sul", "Rondônia", "Roraima", "Santa Catarina", "São Paulo", "Sergipe", "Tocantins", "Distrito Federal" }));
-        jComboBox1.setToolTipText("");
-        jComboBox1.setName("Cbx_Estado"); // NOI18N
-        jComboBox1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox1ActionPerformed(evt);
-            }
-        });
+        Box_Estado.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Acre", "Alagoas", "Amapá", "Amazonas", "Bahia", "Ceará", "Espírito Santo", "Goiás", "Maranhão", "Mato Grosso", "Mato Grosso do Sul", "Minas Gerais", "Pará", "Paraíba", "Paraná", "Pernambuco", "Piauí", "Rio de Janeiro", "Rio Grande do Norte", "Rio Grande do Sul", "Rondônia", "Roraima", "Santa Catarina", "São Paulo", "Sergipe", "Tocantins", "Distrito Federal" }));
+        Box_Estado.setToolTipText("");
+        Box_Estado.setName("Cbx_Estado"); // NOI18N
 
         jLabel10.setText("Cargo:");
 
-        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "CTO — Chief Technology Officer", "CIO — Chief Information Officer", "VP de Engenharia", "Diretor de Tecnologia", "Diretor de Engenharia", "Gerente de Engenharia", "Engineering Manager", "Tech Lead", "Staff Software Engineer", "Principal Software Engineer", "Desenvolvedor de Software Sênior", "Desenvolvedor de Software Pleno", "Desenvolvedor de Software Júnior", "Engenheiro Backend", "Engenheiro Frontend", "Engenheiro Full Stack", "Engenheiro Mobile", "Engenheiro de Dados", "Engenheiro de Machine Learning", "Cientista de Dados", "Analista de Dados", "Arquiteto de Software", "Arquiteto de Soluções", "Arquiteto de Cloud", "Engenheiro DevOps", "Engenheiro de SRE", "Engenheiro de Plataforma", "Engenheiro de Infraestrutura", "Engenheiro de Redes", "Administrador de Sistemas", "Engenheiro de Segurança", "Analista de Segurança da Informação", "Security Architect", "Analista de SOC", "Especialista em Cloud", "Especialista em Banco de Dados", "DBA — Database Administrator", "QA Engineer", "Analista de QA", "Engenheiro de Automação de Testes", "Product Manager — Tecnologia", "Technical Product Manager", "Product Owner", "Scrum Master", "UX Designer", "UI Designer", "UX Researcher", "Analista de Suporte Técnico", "IT Service Manager", "Especialista de TI / Sistemas Corporativos" }));
-        jComboBox3.setName("Cbx_Cargo"); // NOI18N
+        Box_cargo.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "CTO — Chief Technology Officer", "CIO — Chief Information Officer", "VP de Engenharia", "Diretor de Tecnologia", "Diretor de Engenharia", "Gerente de Engenharia", "Engineering Manager", "Tech Lead", "Staff Software Engineer", "Principal Software Engineer", "Desenvolvedor de Software Sênior", "Desenvolvedor de Software Pleno", "Desenvolvedor de Software Júnior", "Engenheiro Backend", "Engenheiro Frontend", "Engenheiro Full Stack", "Engenheiro Mobile", "Engenheiro de Dados", "Engenheiro de Machine Learning", "Cientista de Dados", "Analista de Dados", "Arquiteto de Software", "Arquiteto de Soluções", "Arquiteto de Cloud", "Engenheiro DevOps", "Engenheiro de SRE", "Engenheiro de Plataforma", "Engenheiro de Infraestrutura", "Engenheiro de Redes", "Administrador de Sistemas", "Engenheiro de Segurança", "Analista de Segurança da Informação", "Security Architect", "Analista de SOC", "Especialista em Cloud", "Especialista em Banco de Dados", "DBA — Database Administrator", "QA Engineer", "Analista de QA", "Engenheiro de Automação de Testes", "Product Manager — Tecnologia", "Technical Product Manager", "Product Owner", "Scrum Master", "UX Designer", "UI Designer", "UX Researcher", "Analista de Suporte Técnico", "IT Service Manager", "Especialista de TI / Sistemas Corporativos" }));
+        Box_cargo.setName("Cbx_Cargo"); // NOI18N
 
         button1.setLabel("Imprimir Dados");
         button1.setName("Button_ImprimirCargos"); // NOI18N
+        button1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                AbrirFormMensagem(evt);
+            }
+        });
 
         jLabel11.setText("Informe CPF:");
 
@@ -186,29 +194,30 @@ public class CadastroPessoaForm extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel3)
-                            .addComponent(jLabel2)
-                            .addComponent(jLabel7)
-                            .addComponent(jLabel10))
-                        .addGap(18, 18, 18)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 269, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 269, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 269, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jComboBox3, javax.swing.GroupLayout.PREFERRED_SIZE, 269, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addContainerGap()
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel2)
+                                    .addComponent(jLabel3)
+                                    .addComponent(jLabel7)
+                                    .addComponent(jLabel10))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 269, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 269, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(Box_Estado, javax.swing.GroupLayout.PREFERRED_SIZE, 269, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(Box_cargo, javax.swing.GroupLayout.PREFERRED_SIZE, 269, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 269, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 269, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(114, 114, 114)
+                        .addComponent(button1, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(button1, javax.swing.GroupLayout.PREFERRED_SIZE, 122, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(121, 121, 121))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -227,15 +236,15 @@ public class CadastroPessoaForm extends javax.swing.JFrame {
                     .addComponent(jLabel3))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Box_Estado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel7))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jComboBox3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Box_cargo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel10))
-                .addGap(28, 28, 28)
+                .addGap(25, 25, 25)
                 .addComponent(button1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(26, Short.MAX_VALUE))
+                .addContainerGap(29, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -251,11 +260,13 @@ public class CadastroPessoaForm extends javax.swing.JFrame {
             .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
+        getAccessibleContext().setAccessibleName("Formulario para cadastro de pessoa");
+
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
-        // TODO add your handling code here:
+        //
     }//GEN-LAST:event_jTextField2ActionPerformed
 
     private void jTextField4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField4ActionPerformed
@@ -266,24 +277,25 @@ public class CadastroPessoaForm extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField8ActionPerformed
 
-    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBox1ActionPerformed
-
     private void jComboBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jComboBox2ActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
+    private void AbrirFormMensagem(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_AbrirFormMensagem
+        MensagemForm telasec = new MensagemForm(this);
+        telasec.setVisible(true);
+    }//GEN-LAST:event_AbrirFormMensagem
+
     
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JComboBox<String> Box_Estado;
+    javax.swing.JComboBox<String> Box_cargo;
+    private javax.swing.JTextPane Imp_CPF;
+    private javax.swing.JTextPane Imp_Endereco;
+    private javax.swing.JTextPane Imp_Nome;
     private java.awt.Button button1;
-    private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JComboBox<String> jComboBox2;
-    private javax.swing.JComboBox<String> jComboBox3;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel2;
@@ -307,13 +319,32 @@ public class CadastroPessoaForm extends javax.swing.JFrame {
     private javax.swing.JTextField jTextField2;
     private javax.swing.JTextField jTextField4;
     private javax.swing.JTextField jTextField8;
-    private javax.swing.JTextPane jTextPane1;
     private javax.swing.JTextPane jTextPane2;
-    private javax.swing.JTextPane jTextPane3;
     private javax.swing.JTextPane jTextPane4;
-    private javax.swing.JTextPane jTextPane5;
     private javax.swing.JTextPane jTextPane6;
     private javax.swing.JTextPane jTextPane7;
     private javax.swing.JTextPane jTextPane8;
     // End of variables declaration//GEN-END:variables
+
+    public String getBox_Estado() {
+        return Box_Estado.getSelectedItem().toString();
+    }
+
+    public String getBox_cargo() {
+        return Box_cargo.getSelectedItem().toString();
+    }
+
+    public String getImp_Endereco() {
+        return Imp_Endereco.getText();
+    }
+
+    public String getImp_Nome() {
+        return Imp_Nome.getText();
+    }
+
+    public String getImp_CPF() {
+        return Imp_CPF.getText();
+    }
+
+    
 }

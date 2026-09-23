@@ -17,7 +17,9 @@ public class Janela extends javax.swing.JFrame {
      */
     public Janela() {
         initComponents();
-         getContentPane().setLayout(null);
+        getContentPane().setLayout(null);
+        configurarBounds();
+        setSize(400, 255);
         setLocationRelativeTo(null);
     }
 
@@ -55,109 +57,55 @@ public class Janela extends javax.swing.JFrame {
         setTitle("Laboratório de Programação");
         setFont(new java.awt.Font("Arial", 0, 8)); // NOI18N
         setLocation(new java.awt.Point(0, 0));
-        setPreferredSize(new java.awt.Dimension(400, 255));
         setResizable(false);
-        setSize(new java.awt.Dimension(400, 225));
+        setSize(new java.awt.Dimension(400, 255));
 
         jlAgencia.setText("Código da Agência:");
-        jlAgencia.setAlignmentX(10.0F);
-        jlAgencia.setAlignmentY(10.0F);
-        jlAgencia.setPreferredSize(new java.awt.Dimension(110, 18));
 
-        jtfAgencia.setAlignmentX(125.0F);
-        jtfAgencia.setAlignmentY(10.0F);
-        jtfAgencia.setPreferredSize(new java.awt.Dimension(50, 20));
+        jtfAgencia.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
 
         jlConta.setText("Número da Conta:");
-        jlConta.setAlignmentX(205.0F);
-        jlConta.setAlignmentY(10.0F);
-        jlConta.setPreferredSize(new java.awt.Dimension(105, 18));
 
-        jtfConta.setAlignmentX(205.0F);
-        jtfConta.setAlignmentY(10.0F);
-        jtfConta.setPreferredSize(new java.awt.Dimension(60, 20));
-
-        jSeparator01.setAlignmentX(10.0F);
-        jSeparator01.setAlignmentY(40.0F);
-        jSeparator01.setPreferredSize(new java.awt.Dimension(365, 10));
+        jtfConta.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
 
         jlNome.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jlNome.setText("Nome:");
-        jlNome.setAlignmentX(10.0F);
-        jlNome.setAlignmentY(50.0F);
-        jlNome.setPreferredSize(new java.awt.Dimension(60, 18));
 
-        jtfNome.setAlignmentX(75.0F);
-        jtfNome.setAlignmentY(50.0F);
-        jtfNome.setPreferredSize(new java.awt.Dimension(300, 20));
+        jtfNome.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
 
         jlEndereco.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jlEndereco.setText("Endereço:");
-        jlEndereco.setAlignmentX(10.0F);
-        jlEndereco.setAlignmentY(75.0F);
-        jlEndereco.setPreferredSize(new java.awt.Dimension(60, 18));
 
-        jtfTelefone.setAlignmentX(75.0F);
-        jtfTelefone.setAlignmentY(100.0F);
-        jtfTelefone.setPreferredSize(new java.awt.Dimension(300, 20));
+        jtfTelefone.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
 
         jlTelefone.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jlTelefone.setText("Telefone:");
-        jlTelefone.setAlignmentX(10.0F);
-        jlTelefone.setAlignmentY(100.0F);
-        jlTelefone.setPreferredSize(new java.awt.Dimension(60, 18));
 
-        jtfEndereco.setAlignmentX(75.0F);
-        jtfEndereco.setAlignmentY(75.0F);
-        jtfEndereco.setPreferredSize(new java.awt.Dimension(300, 20));
+        jtfEndereco.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
 
-        jtfCpf.setAlignmentX(75.0F);
-        jtfCpf.setAlignmentY(125.0F);
-        jtfCpf.setPreferredSize(new java.awt.Dimension(300, 20));
+        jtfCpf.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
 
         jlCpf.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         jlCpf.setText("CPF:");
-        jlCpf.setAlignmentX(10.0F);
-        jlCpf.setAlignmentY(125.0F);
-        jlCpf.setPreferredSize(new java.awt.Dimension(60, 18));
 
         bgContas.add(jrbCorrente);
         jrbCorrente.setMnemonic('c');
         jrbCorrente.setSelected(true);
         jrbCorrente.setText("Conta Corrente");
-        jrbCorrente.setAlignmentX(100.0F);
-        jrbCorrente.setAlignmentY(150.0F);
-        jrbCorrente.setPreferredSize(new java.awt.Dimension(111, 20));
 
         bgContas.add(jrbPoupanca);
         jrbPoupanca.setMnemonic('p');
         jrbPoupanca.setText("Conta Poupança");
-        jrbPoupanca.setAlignmentX(225.0F);
-        jrbPoupanca.setAlignmentY(125.0F);
-        jrbPoupanca.setPreferredSize(new java.awt.Dimension(118, 20));
-
-        jSeparator02.setAlignmentX(225.0F);
-        jSeparator02.setAlignmentY(150.0F);
-        jSeparator02.setPreferredSize(new java.awt.Dimension(365, 10));
 
         jbConsultar.setMnemonic('s');
         jbConsultar.setText("Consultar");
-        jbConsultar.setAlignmentX(35.0F);
-        jbConsultar.setAlignmentY(190.0F);
-        jbConsultar.setPreferredSize(new java.awt.Dimension(100, 23));
 
         jbAtualizar.setMnemonic('a');
         jbAtualizar.setText("Atualizar");
-        jbAtualizar.setAlignmentX(145.0F);
-        jbAtualizar.setAlignmentY(190.0F);
         jbAtualizar.setEnabled(false);
-        jbAtualizar.setPreferredSize(new java.awt.Dimension(100, 23));
 
         jbFechar.setMnemonic('f');
         jbFechar.setText("Fechar");
-        jbFechar.setAlignmentX(225.0F);
-        jbFechar.setAlignmentY(190.0F);
-        jbFechar.setPreferredSize(new java.awt.Dimension(100, 23));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -170,42 +118,42 @@ public class Janela extends javax.swing.JFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jSeparator01, javax.swing.GroupLayout.PREFERRED_SIZE, 378, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jlAgencia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jlAgencia)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jtfAgencia, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jlConta, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jlConta)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jtfConta, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jlCpf, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jlTelefone, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jlEndereco, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jlNome, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(jlCpf, javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jlTelefone, javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jlEndereco, javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jlNome, javax.swing.GroupLayout.Alignment.TRAILING))
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createSequentialGroup()
                                         .addGap(6, 6, 6)
-                                        .addComponent(jrbCorrente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addComponent(jrbCorrente)
                                         .addGap(47, 47, 47)
-                                        .addComponent(jrbPoupanca, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(jrbPoupanca))
                                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                         .addComponent(jtfTelefone, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 320, Short.MAX_VALUE)
-                                        .addComponent(jtfEndereco, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(jtfNome, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(jtfCpf, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))))
+                                        .addComponent(jtfEndereco, javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(jtfNome)
+                                        .addComponent(jtfCpf)))))
                         .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jSeparator02, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jSeparator02)
                         .addContainerGap())
                     .addGroup(layout.createSequentialGroup()
                         .addGap(6, 6, 6)
-                        .addComponent(jbConsultar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jbConsultar)
                         .addGap(58, 58, 58)
-                        .addComponent(jbAtualizar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jbAtualizar)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jbFechar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(jbFechar)
                         .addGap(23, 23, 23))))
         );
         layout.setVerticalGroup(
@@ -213,44 +161,66 @@ public class Janela extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jlAgencia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jlAgencia)
                     .addComponent(jtfAgencia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jlConta, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jlConta)
                     .addComponent(jtfConta, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jSeparator01, javax.swing.GroupLayout.PREFERRED_SIZE, 4, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jlNome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jlNome)
                     .addComponent(jtfNome, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jtfEndereco, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jlEndereco, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jlEndereco))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jtfTelefone, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jlTelefone, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jlTelefone))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jtfCpf, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jlCpf, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jlCpf))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jrbCorrente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jrbPoupanca, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jrbCorrente)
+                    .addComponent(jrbPoupanca))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jSeparator02, javax.swing.GroupLayout.PREFERRED_SIZE, 3, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jbConsultar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jbAtualizar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jbFechar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jbConsultar)
+                    .addComponent(jbAtualizar)
+                    .addComponent(jbFechar))
                 .addContainerGap(20, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void configurarBounds() {
+        jlAgencia.setBounds(10, 10, 110, 18);
+        jtfAgencia.setBounds(125, 10, 50, 20);
+        jlConta.setBounds(205, 10, 105, 18);
+        jtfConta.setBounds(315, 10, 60, 20);
+        jSeparator01.setBounds(10, 40, 365, 10);
+        jlNome.setBounds(10, 50, 60, 18);
+        jtfNome.setBounds(75, 50, 300, 20);
+        jlEndereco.setBounds(10, 75, 60, 18);
+        jtfEndereco.setBounds(75, 75, 300, 20);
+        jlTelefone.setBounds(10, 100, 60, 18);
+        jtfTelefone.setBounds(75, 100, 300, 20);
+        jlCpf.setBounds(10, 125, 60, 18);
+        jtfCpf.setBounds(75, 125, 300, 20);
+        jrbCorrente.setBounds(100, 150, 111, 20);
+        jrbPoupanca.setBounds(225, 150, 118, 20);
+        jSeparator02.setBounds(10, 180, 365, 10);
+        jbConsultar.setBounds(35, 190, 100, 23);
+        jbAtualizar.setBounds(145, 190, 100, 23);
+        jbFechar.setBounds(255, 190, 100, 23);
+    }
 
     /**
      * @param args the command line arguments

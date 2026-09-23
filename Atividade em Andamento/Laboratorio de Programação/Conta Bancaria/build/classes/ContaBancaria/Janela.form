@@ -14,12 +14,9 @@
     <Property name="location" type="java.awt.Point" editor="org.netbeans.beaninfo.editors.PointEditor">
       <Point value="[0, 0]"/>
     </Property>
-    <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-      <Dimension value="[400, 255]"/>
-    </Property>
     <Property name="resizable" type="boolean" value="false"/>
     <Property name="size" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-      <Dimension value="[400, 225]"/>
+      <Dimension value="[400, 255]"/>
     </Property>
   </Properties>
   <SyntheticProperties>
@@ -153,67 +150,39 @@
     <Component class="javax.swing.JLabel" name="jlAgencia">
       <Properties>
         <Property name="text" type="java.lang.String" value="C&#xf3;digo da Ag&#xea;ncia:"/>
-        <Property name="alignmentX" type="float" value="10.0"/>
-        <Property name="alignmentY" type="float" value="10.0"/>
-        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-          <Dimension value="[110, 18]"/>
-        </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="jtfAgencia">
       <Properties>
-        <Property name="alignmentX" type="float" value="125.0"/>
-        <Property name="alignmentY" type="float" value="10.0"/>
-        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-          <Dimension value="[50, 20]"/>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="SansSerif" size="12" style="0"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jlConta">
       <Properties>
         <Property name="text" type="java.lang.String" value="N&#xfa;mero da Conta:"/>
-        <Property name="alignmentX" type="float" value="205.0"/>
-        <Property name="alignmentY" type="float" value="10.0"/>
-        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-          <Dimension value="[105, 18]"/>
-        </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="jtfConta">
       <Properties>
-        <Property name="alignmentX" type="float" value="205.0"/>
-        <Property name="alignmentY" type="float" value="10.0"/>
-        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-          <Dimension value="[60, 20]"/>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="SansSerif" size="12" style="0"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JSeparator" name="jSeparator01">
-      <Properties>
-        <Property name="alignmentX" type="float" value="10.0"/>
-        <Property name="alignmentY" type="float" value="40.0"/>
-        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-          <Dimension value="[365, 10]"/>
-        </Property>
-      </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jlNome">
       <Properties>
         <Property name="horizontalAlignment" type="int" value="4"/>
         <Property name="text" type="java.lang.String" value="Nome:"/>
-        <Property name="alignmentX" type="float" value="10.0"/>
-        <Property name="alignmentY" type="float" value="50.0"/>
-        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-          <Dimension value="[60, 18]"/>
-        </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="jtfNome">
       <Properties>
-        <Property name="alignmentX" type="float" value="75.0"/>
-        <Property name="alignmentY" type="float" value="50.0"/>
-        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-          <Dimension value="[300, 20]"/>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="SansSerif" size="12" style="0"/>
         </Property>
       </Properties>
     </Component>
@@ -221,19 +190,12 @@
       <Properties>
         <Property name="horizontalAlignment" type="int" value="4"/>
         <Property name="text" type="java.lang.String" value="Endere&#xe7;o:"/>
-        <Property name="alignmentX" type="float" value="10.0"/>
-        <Property name="alignmentY" type="float" value="75.0"/>
-        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-          <Dimension value="[60, 18]"/>
-        </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="jtfTelefone">
       <Properties>
-        <Property name="alignmentX" type="float" value="75.0"/>
-        <Property name="alignmentY" type="float" value="100.0"/>
-        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-          <Dimension value="[300, 20]"/>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="SansSerif" size="12" style="0"/>
         </Property>
       </Properties>
     </Component>
@@ -241,28 +203,19 @@
       <Properties>
         <Property name="horizontalAlignment" type="int" value="4"/>
         <Property name="text" type="java.lang.String" value="Telefone:"/>
-        <Property name="alignmentX" type="float" value="10.0"/>
-        <Property name="alignmentY" type="float" value="100.0"/>
-        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-          <Dimension value="[60, 18]"/>
-        </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="jtfEndereco">
       <Properties>
-        <Property name="alignmentX" type="float" value="75.0"/>
-        <Property name="alignmentY" type="float" value="75.0"/>
-        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-          <Dimension value="[300, 20]"/>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="SansSerif" size="12" style="0"/>
         </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="jtfCpf">
       <Properties>
-        <Property name="alignmentX" type="float" value="75.0"/>
-        <Property name="alignmentY" type="float" value="125.0"/>
-        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-          <Dimension value="[300, 20]"/>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="SansSerif" size="12" style="0"/>
         </Property>
       </Properties>
     </Component>
@@ -270,11 +223,6 @@
       <Properties>
         <Property name="horizontalAlignment" type="int" value="4"/>
         <Property name="text" type="java.lang.String" value="CPF:"/>
-        <Property name="alignmentX" type="float" value="10.0"/>
-        <Property name="alignmentY" type="float" value="125.0"/>
-        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-          <Dimension value="[60, 18]"/>
-        </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrbCorrente">
@@ -287,11 +235,6 @@
         </Property>
         <Property name="selected" type="boolean" value="true"/>
         <Property name="text" type="java.lang.String" value="Conta Corrente"/>
-        <Property name="alignmentX" type="float" value="100.0"/>
-        <Property name="alignmentY" type="float" value="150.0"/>
-        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-          <Dimension value="[111, 20]"/>
-        </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JRadioButton" name="jrbPoupanca">
@@ -303,21 +246,9 @@
           <Connection code="&apos;p&apos;" type="code"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Conta Poupan&#xe7;a"/>
-        <Property name="alignmentX" type="float" value="225.0"/>
-        <Property name="alignmentY" type="float" value="125.0"/>
-        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-          <Dimension value="[118, 20]"/>
-        </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JSeparator" name="jSeparator02">
-      <Properties>
-        <Property name="alignmentX" type="float" value="225.0"/>
-        <Property name="alignmentY" type="float" value="150.0"/>
-        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-          <Dimension value="[365, 10]"/>
-        </Property>
-      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="jbConsultar">
       <Properties>
@@ -325,11 +256,6 @@
           <Connection code="&apos;s&apos;" type="code"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Consultar"/>
-        <Property name="alignmentX" type="float" value="35.0"/>
-        <Property name="alignmentY" type="float" value="190.0"/>
-        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-          <Dimension value="[100, 23]"/>
-        </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="jbAtualizar">
@@ -338,12 +264,7 @@
           <Connection code="&apos;a&apos;" type="code"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Atualizar"/>
-        <Property name="alignmentX" type="float" value="145.0"/>
-        <Property name="alignmentY" type="float" value="190.0"/>
         <Property name="enabled" type="boolean" value="false"/>
-        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-          <Dimension value="[100, 23]"/>
-        </Property>
       </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="jbFechar">
@@ -352,11 +273,6 @@
           <Connection code="&apos;f&apos;" type="code"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Fechar"/>
-        <Property name="alignmentX" type="float" value="225.0"/>
-        <Property name="alignmentY" type="float" value="190.0"/>
-        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-          <Dimension value="[100, 23]"/>
-        </Property>
       </Properties>
     </Component>
   </SubComponents>

@@ -147,10 +147,6 @@ public class FormCadastroPessoas extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void Imp_CPF1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Imp_CPF1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_Imp_CPF1ActionPerformed
-
     private void Btn_CadastrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Btn_CadastrarActionPerformed
         String Texto = "Nome: " + getImp_Nome() +
                 "\nIdade: " + getImp_Idade() + 
@@ -159,6 +155,10 @@ public class FormCadastroPessoas extends javax.swing.JFrame {
         JOptionPane.showMessageDialog(this,"Nome: " + Texto);
         this.dispose();
     }//GEN-LAST:event_Btn_CadastrarActionPerformed
+
+    private void Imp_CPF1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_Imp_CPF1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_Imp_CPF1ActionPerformed
 
     public FormCadastroPessoas(JButton Btn_Cadastrar, JComboBox<String> Bx_Tipo, JTextField Imp_CPF, JTextField Imp_CPF1, JTextField Imp_Nome, JTextField Imp_Nome1, JTextField Imp_Nome2, JTextField Imp_Nome3, JLabel Lbl_CPF, JLabel Lbl_CPF1, JLabel Lbl_Nome, JLabel Lbl_Nome1, JLabel Lbl_Nome2, JLabel Lbl_Tipo) throws HeadlessException {
         this.Btn_Cadastrar = Btn_Cadastrar;

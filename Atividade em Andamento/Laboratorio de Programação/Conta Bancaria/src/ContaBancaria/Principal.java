@@ -7,6 +7,6 @@ package ContaBancaria;
 
 public class Principal {
     public static void main(String args[]) {
-        java.awt.EventQueue.invokeLater(() -> new FormPrincipal().setVisible(true));
+        java.awt.EventQueue.invokeLater(() -> new Janela().setVisible(true));
     }
 }

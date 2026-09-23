@@ -25,7 +25,6 @@ public class MensagemForm extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        out_Estado1 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
@@ -38,8 +37,6 @@ public class MensagemForm extends javax.swing.JFrame {
         out_Estado = new javax.swing.JLabel();
         out_Estado2 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
-
-        out_Estado1.setText(formPrincipal.getBox_Estado());
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Mensagem");
@@ -186,7 +183,6 @@ public class MensagemForm extends javax.swing.JFrame {
     private javax.swing.JLabel out_CPF;
     private javax.swing.JLabel out_Endereco;
     private javax.swing.JLabel out_Estado;
-    private javax.swing.JLabel out_Estado1;
     private javax.swing.JLabel out_Estado2;
     private javax.swing.JLabel out_Nome;
     // End of variables declaration//GEN-END:variables
